@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ThemeProvider } from "./contexts/Theme";
 import ThemeButton from "./components/ThemeButton";
 import Card from "./components/Card";
-import './App.css'
+import "./App.css";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
@@ -20,7 +20,6 @@ function App() {
     document.querySelector("html").classList.remove("light", "dark");
     document.querySelector("html").classList.add(themeMode);
   }, [themeMode]);
-  
 
   return (
     //value always in double curly brackets
